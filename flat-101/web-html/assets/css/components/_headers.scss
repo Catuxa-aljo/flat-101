@@ -1,0 +1,35 @@
+header {
+    width: 100%;
+    max-width: 998px;
+    margin: 0 auto;
+    padding: 0.5% 5%;
+    font-family: $main-font;
+    text-align: center;
+    nav {
+        border-bottom: $secondary-color solid thin;
+        margin: 0.5% 5%;
+        font-size: 1.5rem;
+        ul {
+            @include horizontal-nav
+        }
+        li {
+            border-right: $secondary-color solid thin;
+            padding: 2%;
+        }
+        li:first-child {
+            width:80%;
+            text-align: left;
+        }
+        a {
+            color: $primary-color;
+            @include hover-lapse
+        }
+        a:hover {
+            @include buttons-hover
+        }
+    }
+    span {
+        font-family: $auxiliar-font;
+        font-size: 1.5rem;
+    }
+}

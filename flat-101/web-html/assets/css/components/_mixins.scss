@@ -1,0 +1,21 @@
+@mixin horizontal-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@mixin hover-lapse {
+    transition-duration: 0.4s;
+}
+
+@mixin buttons-hover {
+    opacity: 50%;
+}
+
+@mixin nav-box {
+    border-bottom: $secondary-color solid thin;
+    border-top: $secondary-color solid thin;
+}

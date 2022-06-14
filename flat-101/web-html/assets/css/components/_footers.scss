@@ -1,0 +1,22 @@
+footer {
+    max-width: 998px;
+    padding: 0.5% 5%;
+    margin: 0 auto;
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-family: $main-font;
+        @include nav-box;
+    }
+    li {
+        padding: 2%;;
+    }
+    a {
+        display: block;
+        color: $secondary-color;
+        &:hover {
+            color: $primary-color
+        }
+    }
+}
