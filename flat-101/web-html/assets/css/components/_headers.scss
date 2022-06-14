@@ -7,7 +7,7 @@ header {
     text-align: center;
     nav {
         border-bottom: $secondary-color solid thin;
-        margin: 0.5% 5%;
+        margin: 0.5% 0;
         font-size: 1.5rem;
         ul {
             @include horizontal-nav
@@ -15,6 +15,7 @@ header {
         li {
             border-right: $secondary-color solid thin;
             padding: 2%;
+            padding-right: 3.5%;
         }
         li:first-child {
             width:80%;
