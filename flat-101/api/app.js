@@ -6,11 +6,13 @@ const mongoose = require('mongoose');
 const logger = require('morgan');
 
 require('./config/db.config');
+const cors = require('./config/cors.config');
 
 const app = express();
 app.use(express.static(`${__dirname}/react-app`));
 
 app.use(logger('dev'));
+app.use(cors);
 app.use(express.json());
 
 const routes = require('./config/routes.config');

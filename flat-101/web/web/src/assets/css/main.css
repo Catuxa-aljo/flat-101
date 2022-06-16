@@ -15,6 +15,11 @@ body {
   display: none !important;
 }
 
+.loading {
+  height: 100vh;
+  margin: 0 auto;
+}
+
 header {
   width: 100%;
   max-width: 998px;
@@ -46,8 +51,19 @@ header nav li {
   padding-right: 3.5%;
 }
 header nav li:first-child {
-  width: 80%;
+  width: 85%;
   text-align: left;
+}
+header nav li:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.9rem;
+  background-color: #ccc;
+  color: #5a5a5a;
+}
+header nav li:last-child i {
+  font-size: 3rem;
 }
 header nav a {
   color: #5a5a5a;
@@ -222,6 +238,69 @@ main nav li:last-child {
           align-items: flex-end;
 }
 
+.product-form h1 {
+  color: #ccc;
+  font-family: "Charis SIL", serif;
+  text-align: center;
+}
+.product-form h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+.product-form h3 {
+  font-family: "Charis SIL", serif;
+  color: #5a5a5a;
+}
+.product-form h4 {
+  font-family: "Lato", sans-serif;
+  color: #ccc;
+}
+.product-form__quantities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-form__quantities div {
+  width: 100%;
+}
+.product-form__quantities div:last-child {
+  margin-left: 1%;
+}
+.product-form__send-button {
+  margin: 0 auto;
+  text-align: center;
+}
+.product-form__send-button button {
+  margin: 2% auto;
+  border: none;
+  border-radius: 15px;
+  padding: 2%;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.product-form__send-button button:hover {
+  background-color: #5a5a5a;
+  color: #ccc;
+}
+
+@media (max-width: 998px) {
+  .product-form__quantities {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-form__quantities div:last-child {
+    margin-left: 0;
+  }
+}
 footer {
   max-width: 998px;
   padding: 0.5% 5%;

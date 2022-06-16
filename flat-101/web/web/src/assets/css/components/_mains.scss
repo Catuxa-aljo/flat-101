@@ -36,9 +36,9 @@ main {
                         display: block;
                         background-color: $primary-color;   
                     }
-                    &:after {
-                    content: "";
                 }
+                li:after {
+                    content: "";
                 }
             }
             &:hover {

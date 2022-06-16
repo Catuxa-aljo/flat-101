@@ -1,0 +1,60 @@
+.product-form {
+    h1 {
+        color: $secondary-color;
+        font-family: $auxiliar-font;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    h3 {
+        font-family: $auxiliar-font;
+        color: $primary-color;
+    }
+    h4 {
+        font-family: $main-font;
+        color: $secondary-color;
+    }
+    &__quantities {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            width: 100%;
+            &:last-child {
+                margin-left: 1%;
+            }
+        }
+    }
+    
+    &__send-button {
+        margin: 0 auto;
+        text-align: center;
+        button {
+            margin: 2% auto;
+            border: none;
+            border-radius: 15px;
+            padding: 2%;
+            text-transform: uppercase;
+            @include hover-lapse;
+           &:hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+           }
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    .product-form {
+        &__quantities {
+            flex-direction: column;
+        div {
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+        }
+    }
+}

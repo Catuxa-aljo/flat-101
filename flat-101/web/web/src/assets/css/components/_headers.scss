@@ -17,9 +17,18 @@ header {
             padding: 2%;
             padding-right: 3.5%;
             &:first-child {
-            width:80%;
+            width:85%;
             text-align: left;
             
+            }
+            &:last-child {
+                display: flex;
+                font-size: 0.9rem;
+                background-color: $secondary-color;
+                color: $primary-color;
+                i {
+                font-size: 3rem;
+            }
             }
         }
         a {
@@ -30,6 +39,7 @@ header {
                 @include buttons-hover
             }
         }
+        
     }
     span {
         font-family: $auxiliar-font;
